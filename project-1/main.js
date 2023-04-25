@@ -24,38 +24,3 @@ openMenu.addEventListener("click",menuChange);
 closeMenu.addEventListener("click",menuChange);
 
 
-//Certificates
-let certificatesImg = document.querySelectorAll(".certificatesInfo img");
-
-for(let i=1; i<=certificatesImg.length; i+=3)
-{
-    certificatesImg[i].style.marginLeft = "2%";
-    certificatesImg[i].style.marginRight = "2%";
-}
-
-
-for(let i=1; i<=certificatesImg.length; i+=3)
-{
-    certificatesImg[i].style.marginLeft = "2%";
-    certificatesImg[i].style.marginRight = "2%";
-}
-
-for(let i=0; i<certificatesImg.length; i++)
-{
-    if((i+3) < certificatesImg.length)
-    {
-        certificatesImg[i].style.marginBottom = "2%";
-    }
-}
-
-for(let i=0; i<certificatesImg.length; i++)
-{
-    certificatesImg[i].addEventListener("click", (event) => {
-
-        let style = event.target.style;
-
-
-        console.log(event);
-
-    });
-}
